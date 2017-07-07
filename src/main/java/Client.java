@@ -12,7 +12,8 @@ class Client {
 
     void run() {
         try {
-            Socket socket = new Socket("192.168.1.2", 8585);
+            //Socket socket = new Socket("192.168.1.2", 8585);
+            Socket socket = new Socket("10.0.2.15", 8585);
 
             InputStreamReader inputStreamReader = new InputStreamReader(socket.getInputStream());
             BufferedReader reader = new BufferedReader(inputStreamReader);

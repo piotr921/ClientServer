@@ -7,11 +7,17 @@ class MyTask implements Runnable {
         execute();
     }
 
-    public void execute() {
+    void execute() {
+
+        try {
+            Thread.sleep(2000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
         anotherJob();
     }
 
-    public void anotherJob() {
+    void anotherJob() {
         System.out.println("Top of stack trace!");
     }
 }
