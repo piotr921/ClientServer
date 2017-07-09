@@ -5,15 +5,15 @@ import java.io.PrintWriter;
 import java.net.Socket;
 import java.util.Scanner;
 
-class Client {
+class ClientB {
 
     private Socket socket;
     private PrintWriter writer;
     private BufferedReader reader;
 
     public static void main(String[] args) {
-        Client client = new Client();
-        client.run();
+        ClientB clientB = new ClientB();
+        clientB.run();
     }
 
     void run() {

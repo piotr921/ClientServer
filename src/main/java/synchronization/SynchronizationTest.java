@@ -13,7 +13,7 @@ public class SynchronizationTest implements Runnable {
         }
     }
 
-    private void increment() {
+    private synchronized void increment() {
         int i = accountState;
         accountState = i + 1;
     }
